@@ -18,12 +18,28 @@ The 3 main Features are :
 
 A Demo OF all the 3 features is Given Below.
 
+## Home page 
+
+<br>
+<img src="/images/homepage.png">
+<br>
+
 ## Twitter Based Sentimnetal Analysis 
 
+<br>
+<img src="/images/twitter.png">
+<br>
+
 ## Text based Sentimental Analysis
+<br>
+<img src="images//text.png">
+<br>
 
 ## Movie based Genre Analysis
 
+<br>
+<img src="/images/movie.png">
+<br>
 
 # Developing Environment 
 
