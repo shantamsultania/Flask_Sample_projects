@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Movie Genre Predictor</title>
+		<link rel="shortcut icon" href="{{ url_for('static', filename='spam-favicon.ico') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<!-- Website Title -->
+    	<div class="container">
+    		<h2 class='container-heading'><span class="heading_font">Genre Predictor</span> for Movies</h2>
+            <div class='description'>
+    		</div>
+    	</div>
+
+		<!-- Result -->
+		<div class="results">
+			{% if prediction==0 %}
+				<h1>Predicted Genre: <span class='result-prediction'>Miscellaneous</span></h1>
+			{% elif prediction==1 %}
+				<h1>Predicted Genre: <span class='result-prediction'>Action</span></h1>
+			{% elif prediction==2 %}
+				<h1>Predicted Genre: <span class='result-prediction'>Adventure</span></h1>
+			{% elif prediction==3 %}
+				<h1>Predicted Genre: <span class='result-prediction'>Comedy</span></h1>
+			{% elif prediction==4 %}
+				<h1>Predicted Genre: <span class='result-prediction'>Drama</span></h1>
+			{% elif prediction==5 %}
+				<h1>Predicted Genre: <span class='result-prediction'>Horror</span></h1>
+			{% elif prediction==6 %}
+				<h1>Predicted Genre: <span class='result-prediction'>Romance</span></h1>
+			{% elif prediction==7 %}
+				<h1>Predicted Genre: <span class='result-prediction'>Sci-Fi</span></h1>
+			{% elif prediction==8 %}
+				<h1>Predicted Genre: <span class='result-prediction'>Thriller</span></h1>
+			{% endif %}
+		</div>
+
+		<!-- Footer -->
+        <div class='footer'>
+            <div class="contact">
+                <a target="_blank" href="https://github.com/shantamsultania/TCS_ICON_RIO-45_Project"><i class="fab fa-github fa-lg contact-icon"></i></a>
+            </div>
+            <p class='footer-description'>Made with ❤️ by Shantam Sultania.</p>
+        </div>
+
+	</body>
+</html>
